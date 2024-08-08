@@ -1,12 +1,12 @@
 webapp:
-  name: #APP_NAME
-  group: #APP_NAME
-  path: #URL_PATH
+  name: ncote-workshop-webapp
+  group: ncote-workshop
+  path: /
   tls:
-    fqdn: #FQDN
-    secretName: incommon-account-key-#APP_NAME
+    fqdn: ncote-workshop-webapp.k8s.ucar.edu
+    secretName: incommon-account-key-ncote-workshop-webapp
   container: 
-    port: #CONTAINER_PORT
+    port: 5006
     memory: 2G
     cpu: 1
-    image: #IMAGE_NAME
+    image: docker.io/ncging/workshop-webapp:2024-08-08.16.54
